@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <h1> TO-DO LIST </h1>
+            <button onclick="clearAll()" class="clear-btn" title="Clear All Tasks"><i
+                    class="fas fa-trash-alt"></i></button>
+        </header>
+
+        <main class="list-container">
+            <ul id="list"></ul>
+        </main>
+
+        <footer class="input-container">
+            <input id="task" placeholder="Type a new task..." onkeypress="handleKeyPress(event)">
+            <button onclick="addTask()" class="add-btn"><i class="fas fa-plus"></i></button>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
