@@ -3,7 +3,7 @@ let tasks = [];
 function displayTasks() {
     let html = "";
     for (let i = 0; i < tasks.length; i++) {
-        let stepNum = tasks.length - i;
+        let stepNum = i + i;
 
         html += `
             <li class="task-item">
@@ -24,7 +24,7 @@ function addTask() {
     if (text === "") {
         return;
     }
-    tasks.unshift(text);
+    tasks.push(text);
     taskInput.value = "";
     saveTasks();
     displayTasks();
