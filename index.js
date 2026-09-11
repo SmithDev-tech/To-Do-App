@@ -3,7 +3,7 @@ let tasks = [];
 function displayTasks() {
     let html = "";
     for (let i = 0; i < tasks.length; i++) {
-        let stepNum = i + i;
+        let stepNum = i + 1;
 
         html += `
             <li class="task-item">
